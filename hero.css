@@ -1,0 +1,111 @@
+/* ==========================================================================
+   PERSONAL HERO SECTION STYLES (MATCHES SCREENSHOT)
+   ========================================================================== */
+
+.hero-personal {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #040404;
+  overflow: hidden;
+  padding: 120px 0 60px;
+}
+
+/* Background Portrait Setup (Right Side) */
+.hero-personal-bg {
+  background-image: url("./bg.jpg");
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+/* Smooth gradient overlay to merge black into the portrait */
+.hero-personal-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #040404 0%, rgba(4, 4, 4, 0.75) 30%, rgba(4, 4, 4, 0.15) 75%, transparent 100%),
+              linear-gradient(to top, #040404 0%, transparent 20%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 620px;
+}
+
+/* Big Hero Title "Emily Jones" / "จิฬาวรรณ ขุนอินทร์" */
+.hero-personal-title {
+  font-size: clamp(2.8rem, 6vw, 4.2rem);
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.15;
+  margin-bottom: 18px;
+  font-family: var(--font-heading);
+}
+
+/* Subtitle "I'm Developer" with Green Underline */
+.hero-personal-subtitle {
+  font-size: clamp(1.3rem, 2.8vw, 1.85rem);
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 400;
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.hero-personal-subtitle span.typing-text {
+  color: #ffffff;
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 2px;
+}
+
+/* Social Buttons Row (Matches Screenshot: X, Facebook, Instagram, LinkedIn/GitHub) */
+.hero-social-links {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.hero-social-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  transition: var(--transition-smooth);
+  backdrop-filter: blur(6px);
+}
+
+.hero-social-btn:hover {
+  background: var(--accent-color);
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px var(--accent-glow);
+}
+
+@media (max-width: 991px) {
+  .hero-personal {
+    padding: 100px 0 50px;
+  }
+  .hero-personal-bg {
+    width: 100%;
+    opacity: 0.35;
+  }
+  .hero-personal-bg::before {
+    background: linear-gradient(to bottom, #040404 0%, rgba(4, 4, 4, 0.8) 100%);
+  }
+}

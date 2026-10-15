@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="act1Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#180e12"/>
+      <stop offset="50%" stop-color="#121218"/>
+      <stop offset="100%" stop-color="#0a0a0d"/>
+    </linearGradient>
+    <linearGradient id="act1Red" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff3b68"/>
+      <stop offset="100%" stop-color="#cc0029"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#act1Grad)"/>
+  <circle cx="680" cy="140" r="160" fill="#ff2a55" opacity="0.08"/>
+  <circle cx="120" cy="380" r="120" fill="#ffffff" opacity="0.03"/>
+  <g transform="translate(220, 90)">
+    <rect x="0" y="20" width="360" height="220" rx="16" fill="#181822" stroke="url(#act1Red)" stroke-width="2"/>
+    <circle cx="180" cy="130" r="50" fill="none" stroke="#ff3b68" stroke-width="4"/>
+    <circle cx="180" cy="130" r="28" fill="url(#act1Red)"/>
+    <rect x="40" y="50" width="30" height="12" rx="4" fill="#ffffff" opacity="0.7"/>
+    <circle cx="310" cy="56" r="8" fill="#ff2a55"/>
+    <path d="M120 270 L240 270" stroke="#ff3b68" stroke-width="4" stroke-linecap="round"/>
+    <path d="M180 240 L180 270" stroke="#ff3b68" stroke-width="4"/>
+  </g>
+  <rect x="50" y="380" width="180" height="30" rx="6" fill="#201a24"/>
+  <text x="65" y="400" fill="#ff3b68" font-family="'Prompt', sans-serif" font-weight="700" font-size="13">WORKSHOP & TRAINING</text>
+  <text x="50" y="445" fill="#ffffff" font-family="'Prompt', sans-serif" font-weight="700" font-size="22">Creative Media & Digital Content 2025</text>
+</svg>
+

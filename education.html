@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="th" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education | จิฬาวรรณ ขุนอินทร์ (ประวัติการศึกษาทุกระดับ)</title>
+  
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/education.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+<body>
+
+  <!-- PRELOADER -->
+  <div id="preloader">
+    <div class="loader-spinner"></div>
+    <div class="loader-text">EDUCATION BACKGROUND</div>
+  </div>
+
+  <!-- 1. NAVIGATION BAR -->
+  <nav class="custom-navbar scrolled">
+    <div class="container d-flex align-items-center justify-content-between">
+      
+      <a href="index.html" class="navbar-brand-personal">
+        JILAWAN<span class="dot">.</span>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+    <div class="navbar-nav-custom">
+        <a class="nav-link-custom" href="index.html">Home</a>
+        <a class="nav-link-custom" href="education.html">Education</a>
+        <a class="nav-link-custom" href="portfolio.html">Portfolio</a>
+        <a class="nav-link-custom" href="activity.html">Activity</a>
+        <a class="nav-link-custom" href="contact.html">Contact</a>
+    </div>
+
+      <!-- Controls Right: Theme Toggle & Mobile Hamburger -->
+      <div class="d-flex align-items-center gap-3">
+        <button class="theme-toggle-btn" aria-label="สลับธีม" title="สลับโหมดสว่าง/มืด">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+        <button class="mobile-toggle-btn" id="mobileMenuToggle" aria-label="เปิดเมนู">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer -->
+  <div class="nav-backdrop" id="navBackdrop"></div>
+  <div class="nav-menu-collapse" id="navMenuCollapse">
+    <button class="close-menu-btn" id="closeMenuBtn" aria-label="ปิดเมนู">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <div class="mb-4">
+      <h5 class="fw-bold text-light mb-1">JILAWAN.</h5>
+    </div>
+  </div>
+
+  <!-- MAIN EDUCATION SECTION -->
+  <main style="padding-top: 110px;" class="section-padding">
+    <div class="container">
+      
+      <div class="section-header reveal-fade-up">
+        <h2>Educational Background</h2>
+        <p>ประวัติและข้อมูลการศึกษา ทุกระดับ</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          
+          <div class="education-timeline reveal-fade-up">
+            
+            <!-- Level 1: ระดับอุดมศึกษา -->
+            <div class="timeline-item">
+              <div class="timeline-marker">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <div class="education-card">
+                <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-2">
+                  <span class="education-badge-year">
+                    <i class="fa-solid fa-calendar-days"></i> 2564 - ปัจจุบัน (กำลังศึกษา)
+                  </span>
+                  <span class="badge bg-danger bg-opacity-25 text-danger border border-danger border-opacity-25 px-3 py-1 rounded-pill">
+                    ระดับปริญญาตรี
+                  </span>
+                </div>
+                <h3 class="education-degree">หลักสูตรวิทยาการบัณฑิต (สื่อนฤมิต)</h3>
+                <div class="education-school">
+                  <i class="fa-solid fa-university"></i> มหาวิทยาลัยมหาสารคาม (Mahasarakham University)
+                </div>
+                <p class="text-muted small mb-2">
+                  <i class="fa-solid fa-building-columns me-1"></i> คณะวิทยาการสารสนเทศ (Faculty of Informatics)
+                </p>
+                <p class="education-desc">
+                  ศึกษาองค์ความรู้ด้านการออกแบบและผลิตสื่อดิจิทัลเชิงสร้างสรรค์แบบครบวงจร ตั้งแต่ทฤษฎีการสื่อสารความหมายด้วยภาพ การออกแบบกราฟิกอัตลักษณ์ การจัดแสงและการถ่ายภาพเชิงพาณิชย์ การผลิตสื่อวิดีโอระดับภาพยนตร์ ไปจนถึงการออกแบบและพัฒนาเว็บไซต์สำหรับการนำเสนอสื่อสมัยใหม่
+                </p>
+                <h6 class="text-light fw-bold small text-uppercase mb-2">รายวิชาสำคัญและทักษะที่ศึกษา:</h6>
+                <div class="education-subjects-list">
+                  <span class="education-subject-tag"><i class="fa-solid fa-palette me-1"></i> การออกแบบสื่อสิ่งพิมพ์ (Print Design)</span>
+                  <span class="education-subject-tag"><i class="fa-solid fa-video me-1"></i> การตัดต่อและลำดับภาพยนตร์ (Video Editing)</span>
+                  <span class="education-subject-tag"><i class="fa-solid fa-camera me-1"></i> การถ่ายภาพเพื่องานสื่อสาร (Photography)</span>
+                  <span class="education-subject-tag"><i class="fa-solid fa-sliders me-1"></i> การออกแบบเสียงและเกรดสี (Sound & Color Grading)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Level 2: ระดับมัธยมศึกษาตอนปลาย -->
+            <div class="timeline-item">
+              <div class="timeline-marker">
+                <i class="fa-solid fa-school"></i>
+              </div>
+              <div class="education-card">
+                <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-2">
+                  <span class="education-badge-year">
+                    <i class="fa-solid fa-calendar-days"></i> 2562 - 2564 (สำเร็จการศึกษา)
+                  </span>
+                  <span class="badge bg-danger bg-opacity-25 text-danger border border-danger border-opacity-25 px-3 py-1 rounded-pill">
+                    ระดับมัธยมศึกษาตอนปลาย
+                  </span>
+                </div>
+                <h3 class="education-degree">มัธยมศึกษาปีที่ 4 - 6</h3>
+                <div class="education-school">
+                  <i class="fa-solid fa-school-flag"></i> โรงเรียนน้ำปลีกศึกษา
+                </div>
+                <p class="education-desc">
+                  สำเร็จการศึกษาระดับมัธยมศึกษาตอนปลาย สายวิทย์-คณิต
+                </p>
+                <h6 class="text-light fw-bold small text-uppercase mb-2">ทักษะและกิจกรรมที่ได้รับ:</h6>
+                <div class="education-subjects-list">
+                  <span class="education-subject-tag">คอมพิวเตอร์และเทคโนโลยีสารสนเทศ</span>
+                  <span class="education-subject-tag">การทำงานเป็นทีมและการนำเสนอผลงาน</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Level 3: ระดับมัธยมศึกษาตอนต้น -->
+            <div class="timeline-item">
+              <div class="timeline-marker">
+                <i class="fa-solid fa-book-open"></i>
+              </div>
+              <div class="education-card">
+                <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-2">
+                  <span class="education-badge-year">
+                    <i class="fa-solid fa-calendar-days"></i> 2560 - 2562 (สำเร็จการศึกษา)
+                  </span>
+                  <span class="badge bg-danger bg-opacity-25 text-danger border border-danger border-opacity-25 px-3 py-1 rounded-pill">
+                    ระดับมัธยมศึกษาตอนต้น
+                  </span>
+                </div>
+                <h3 class="education-degree">มัธยมศึกษาปีที่ 1 - 3</h3>
+                <div class="education-school">
+                  <i class="fa-solid fa-school-flag"></i> โรงเรียนน้ำปลีกศึกษา
+                </div>
+                <p class="education-desc">
+                  สำเร็จการศึกษาหลักสูตรการศึกษาภาคบังคับระดับมัธยมศึกษาตอนต้น สายวิทย์-คณิต
+                <div class="education-subjects-list">
+                  <span class="education-subject-tag">การศึกษาขั้นพื้นฐาน</span>
+                  <span class="education-subject-tag">กิจกรรมพัฒนาผู้เรียน</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Level 4: ระดับประถมศึกษา -->
+            <div class="timeline-item">
+              <div class="timeline-marker">
+                <i class="fa-solid fa-shapes"></i>
+              </div>
+              <div class="education-card">
+                <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-2">
+                  <span class="education-badge-year">
+                    <i class="fa-solid fa-calendar-days"></i> 2554 - 2560 (สำเร็จการศึกษา)
+                  </span>
+                  <span class="badge bg-danger bg-opacity-25 text-danger border border-danger border-opacity-25 px-3 py-1 rounded-pill">
+                    ระดับประถมศึกษา
+                  </span>
+                </div>
+                <h3 class="education-degree">ประถมศึกษาปีที่ 1 - 6</h3>
+                <div class="education-school">
+                  <i class="fa-solid fa-school-flag"></i> โรงเรียนบ้านหนองเรือ
+                </div>
+                <p class="education-desc">
+                  สำเร็จการศึกษาระดับประถมศึกษาด้วยเฉลี่ย 3.99
+                </p>
+                <div class="education-subjects-list">
+                  <span class="education-subject-tag">การศึกษาขั้นพื้นฐาน</span>
+                  <span class="education-subject-tag">การเอาตัวรอดจากการโดนหน้าแหวนอาจารย์ได้ดี</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER (เหมือนกันทุกหน้า) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- เมนูลิงก์ฝั่งซ้าย -->
+        <div class="col-md-6">
+          <div class="footer-nav-links justify-content-start">
+            <a href="index.html">Home</a>
+            <a href="education.html">Education</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="activity.html">Activity</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <!-- ข้อความลิขสิทธิ์ฝั่งขวา -->
+        <div class="col-md-6 text-md-end">
+          <p class="footer-copy mb-0">
+            &copy; 2026 <strong>Portfolio</strong> | Designed by <strong>JILAWAN.</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll-to-Top Button -->
+  <button id="scrollTopBtn" class="scroll-top-btn" aria-label="เลื่อนขึ้นบนสุด" title="เลื่อนขึ้นด้านบน">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/scroll.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+

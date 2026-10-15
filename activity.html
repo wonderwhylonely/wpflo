@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="th" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activity | จิฬาวรรณ ขุนอินทร์ (กิจกรรมและการอบรม)</title>
+  
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/activity.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+<body>
+
+  <!-- PRELOADER -->
+  <div id="preloader">
+    <div class="loader-spinner"></div>
+    <div class="loader-text">ACTIVITIES & WORKSHOPS</div>
+  </div>
+
+  <!-- 1. NAVIGATION BAR -->
+  <nav class="custom-navbar scrolled">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="index.html" class="navbar-brand-personal">JILAWAN<span class="dot">.</span></a>
+
+      <!-- Desktop Nav Menu -->
+    <div class="navbar-nav-custom">
+        <a class="nav-link-custom" href="index.html">Home</a>
+        <a class="nav-link-custom" href="education.html">Education</a>
+        <a class="nav-link-custom" href="portfolio.html">Portfolio</a>
+        <a class="nav-link-custom" href="activity.html">Activity</a>
+        <a class="nav-link-custom" href="contact.html">Contact</a>
+    </div>
+
+
+      <div class="d-flex align-items-center gap-3">
+        <button class="theme-toggle-btn" aria-label="สลับธีม"><i class="fa-solid fa-sun"></i></button>
+        <button class="mobile-toggle-btn" id="mobileMenuToggle" aria-label="เปิดเมนู"><i class="fa-solid fa-bars-staggered"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer -->
+  <div class="nav-backdrop" id="navBackdrop"></div>
+  <div class="nav-menu-collapse" id="navMenuCollapse">
+    <button class="close-menu-btn" id="closeMenuBtn" aria-label="ปิดเมนู"><i class="fa-solid fa-xmark"></i></button>
+    <div class="mb-4">
+      <h5 class="fw-bold text-light mb-1">JILAWAN.</h5>
+      <p class="text-muted small">สื่อนฤมิต (Creative Media)</p>
+    </div>
+  </div>
+
+  <!-- MAIN ACTIVITY SECTION -->
+  <main style="padding-top: 110px;" class="section-padding">
+    <div class="container">
+      
+      <div class="section-header reveal-fade-up">
+        <h2>Activities & Workshops</h2>
+        <p>กิจกรรมที่เคยเข้าร่วมและหลักสูตรการฝึกอบรม</p>
+      </div>
+
+      <!-- Activity Cards Grid -->
+      <div class="row g-4 justify-content-center">
+        
+        <!-- Activity 1 -->
+        <div class="col-md-6 reveal-fade-up">
+          <div class="activity-card">
+            <div class="activity-thumb-wrapper">
+              <span class="activity-category-badge">Workshop</span>
+              <img src="assets/images/ac1.jpg" alt="Creative Media & Digital Content 2025">
+            </div>
+            <div class="activity-body">
+              <div class="activity-date-meta">
+                <i class="fa-solid fa-calendar-days"></i> 16 สิงหาคม 2569
+              </div>
+              <h3 class="activity-title">โครงการอบรมเชิงปฏิบัติการ "UX/UI "พื้นฐาน</h3>
+              <div class="activity-location">
+                <i class="fa-solid fa-location-dot"></i> คณะวิทยาการสารสนเทศ มหาวิทยาลัยมหาสารคาม
+              </div>
+              <p class="activity-desc">
+                เข้าร่วมอบรมโครงการอบรมเชิงปฏิบัติการ "UX/UI "พื้นฐาน 
+              </p>
+              <div class="activity-highlights">
+                <span class="activity-highlight-pill"><i class="fa-solid fa-clapperboard me-1"></i> UX/UI</span>
+    
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Activity 2 -->
+        <div class="col-md-6 reveal-fade-up">
+          <div class="activity-card">
+            <div class="activity-thumb-wrapper">
+              <span class="activity-category-badge">X Campus Advertising Idea Contest</span>
+              <img src="assets/images/ac3.jpg" alt="Cinematic Color Grading Masterclass">
+            </div>
+            <div class="activity-body">
+              <div class="activity-date-meta">
+                <i class="fa-solid fa-calendar-days"></i> 20 พฤศจิกายน 2568
+              </div>
+              <h3 class="activity-title">เข้าร่วมโครงการประกวดคลิปไวรัลโฆษณาของ X Campus Advertising Idea Contest</h3>
+              <div class="activity-location">
+                <i class="fa-solid fa-location-dot"></i> คณะวิทยาการสารสนเทศ
+              </div>
+              <p class="activity-desc">
+                ได้เข้ารอบ 2 และได้ส่งโฆษณาเกี่ยวกับถุงยางอนามัย Durex ลงประกวด
+              </p>
+              <div class="activity-highlights">
+                <span class="activity-highlight-pill"><i class="fa-solid fa-sliders me-1"></i> Director</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Activity 3 -->
+        <div class="col-md-6 reveal-fade-up">
+          <div class="activity-card">
+            <div class="activity-thumb-wrapper">
+              <span class="activity-category-badge">Cinematic</span>
+              <img src="assets/images/ac2.jfif" alt="Creative Media Annual Showcase">
+            </div>
+            <div class="activity-body">
+              <div class="activity-date-meta">
+                <i class="fa-solid fa-calendar-days"></i> 31 มีนาคม 2568
+              </div>
+              <h3 class="activity-title">ถ่ายทำภาพยนตร์</h3>
+              <div class="activity-location">
+                <i class="fa-solid fa-location-dot"></i> ฉายในโรงภาพยนตร์คณะวิทยาการสารสนเทศ
+              </div>
+              <p class="activity-desc">
+                  ถ่ายทำภาพยนตร์ เพื่อสามารถปฏิบัติ ทำงานได้จริง
+              </p>
+              <div class="activity-highlights">
+                <span class="activity-highlight-pill"><i class="fa-solid fa-palette me-1"></i> 3P</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER (เหมือนกันทุกหน้า) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- เมนูลิงก์ฝั่งซ้าย -->
+        <div class="col-md-6">
+          <div class="footer-nav-links justify-content-start">
+            <a href="index.html">Home</a>
+            <a href="education.html">Education</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="activity.html">Activity</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <!-- ข้อความลิขสิทธิ์ฝั่งขวา -->
+        <div class="col-md-6 text-md-end">
+          <p class="footer-copy mb-0">
+            &copy; 2026 <strong>Portfolio</strong> | Designed by <strong>จิฬาวรรณ ขุนอินทร์</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll-to-Top Button -->
+  <button id="scrollTopBtn" class="scroll-top-btn" aria-label="เลื่อนขึ้นบนสุด" title="เลื่อนขึ้นด้านบน">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/scroll.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,154 @@
+/* ==========================================================================
+   EDUCATION PAGE STYLES (TIMELINE & DEGREE CARDS)
+   ========================================================================== */
+
+.education-timeline {
+  position: relative;
+  padding: 20px 0;
+}
+
+.education-timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 30px;
+  width: 3px;
+  background: linear-gradient(180deg, var(--accent-color) 0%, rgba(255, 42, 85, 0.2) 100%);
+  border-radius: 2px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 45px;
+  padding-left: 75px;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: 15px;
+  top: 0;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #0d0d10;
+  border: 3px solid var(--accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 0.85rem;
+  box-shadow: 0 0 15px var(--accent-glow);
+  z-index: 2;
+  transition: var(--transition-smooth);
+}
+
+.timeline-item:hover .timeline-marker {
+  transform: scale(1.15);
+  background: var(--accent-color);
+  color: #ffffff;
+}
+
+.education-card {
+  background: var(--bg-card);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid var(--border-glass);
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: var(--shadow-card);
+  transition: var(--transition-smooth);
+}
+
+.education-card:hover {
+  border-color: var(--border-focus);
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.45);
+}
+
+.education-badge-year {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--accent-soft);
+  color: var(--accent-color);
+  border: 1px solid rgba(255, 42, 85, 0.3);
+  padding: 4px 14px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.education-degree {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+  font-family: var(--font-heading);
+}
+
+.education-school {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--accent-color);
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.education-desc {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.education-subjects-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.education-subject-tag {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-glass);
+  color: var(--text-secondary);
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  transition: var(--transition-fast);
+}
+
+.education-card:hover .education-subject-tag {
+  border-color: rgba(255, 42, 85, 0.3);
+}
+
+@media (max-width: 768px) {
+  .education-timeline::before {
+    left: 20px;
+  }
+  .timeline-marker {
+    left: 5px;
+    width: 30px;
+    height: 30px;
+    font-size: 0.75rem;
+  }
+  .timeline-item {
+    padding-left: 50px;
+  }
+  .education-card {
+    padding: 22px 18px;
+  }
+  .education-degree {
+    font-size: 1.15rem;
+  }
+}
+

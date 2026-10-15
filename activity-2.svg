@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="act2Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#15121c"/>
+      <stop offset="50%" stop-color="#0f0f15"/>
+      <stop offset="100%" stop-color="#08080a"/>
+    </linearGradient>
+    <linearGradient id="act2Red" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff476d"/>
+      <stop offset="100%" stop-color="#990022"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#act2Grad)"/>
+  <circle cx="200" cy="160" r="140" fill="#ff476d" opacity="0.08"/>
+  <g transform="translate(240, 80)">
+    <rect x="0" y="20" width="320" height="220" rx="12" fill="#181822" stroke="url(#act2Red)" stroke-width="2"/>
+    <rect x="25" y="45" width="270" height="170" rx="8" fill="#0d0d12"/>
+    <path d="M40 185 L110 110 L170 170 L210 130 L280 185 Z" fill="url(#act2Red)" opacity="0.8"/>
+    <circle cx="95" cy="85" r="18" fill="#ffffff" opacity="0.9"/>
+  </g>
+  <rect x="50" y="380" width="160" height="30" rx="6" fill="#201a24"/>
+  <text x="65" y="400" fill="#ff3b68" font-family="'Prompt', sans-serif" font-weight="700" font-size="13">EXHIBITION SHOWCASE</text>
+  <text x="50" y="445" fill="#ffffff" font-family="'Prompt', sans-serif" font-weight="700" font-size="22">Creative Media Annual Exhibition 2025</text>
+</svg>
+

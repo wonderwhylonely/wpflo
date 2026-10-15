@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p2Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141419"/>
+      <stop offset="100%" stop-color="#0a0a0d"/>
+    </linearGradient>
+    <radialGradient id="apertureRed" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff3366"/>
+      <stop offset="70%" stop-color="#b00020"/>
+      <stop offset="100%" stop-color="#2a0007"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#p2Grad)"/>
+  <g transform="translate(400, 200)">
+    <circle r="120" fill="none" stroke="#2a2a36" stroke-width="4"/>
+    <circle r="100" fill="url(#apertureRed)" opacity="0.9"/>
+    <circle r="80" fill="#0d0d12"/>
+    <circle r="36" fill="#ff3366"/>
+    <circle r="14" fill="#ffffff"/>
+    <path d="M-130,0 L-145,0 M130,0 L145,0 M0,-130 L0,-145 M0,130 L0,145" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+    <path d="M-220,-120 L-250,-120 L-250,-90" stroke="#ff3366" stroke-width="3" fill="none"/>
+    <path d="M220,-120 L250,-120 L250,-90" stroke="#ff3366" stroke-width="3" fill="none"/>
+    <path d="M-220,120 L-250,120 L-250,90" stroke="#ff3366" stroke-width="3" fill="none"/>
+    <path d="M220,120 L250,120 L250,90" stroke="#ff3366" stroke-width="3" fill="none"/>
+  </g>
+  <rect x="60" y="380" width="140" height="32" rx="6" fill="#22222d"/>
+  <text x="75" y="401" fill="#ff3366" font-family="'Outfit', sans-serif" font-weight="700" font-size="14">PHOTOGRAPHY</text>
+  <text x="60" y="445" fill="#ffffff" font-family="'Outfit', sans-serif" font-weight="700" font-size="24">Cinematic Urban Night Photography</text>
+</svg>
