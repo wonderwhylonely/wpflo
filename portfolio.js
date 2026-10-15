@@ -10,7 +10,7 @@ const portfolioProjects = [
     desc: 'งานออกแบบอัตลักษณ์องค์กรและคู่มือแบรนด์ สไตล์มินิมอลผสานความล้ำสมัย พร้อมชุดไอคอนและโมเดลจำลอง',
     fullDesc: 'โปสเตอร์ภาพยนตร์ในรายวิชาที่การออกแบบสื่อสิ่งพิมพ์',
     tools: ['Photoshop', 'Canva'],
-    image: 'assets/images/grap.jpg',
+    image: 'grap.jpg', // แก้ไขพาธรูปภาพให้ตรงกับ HTML
     date: 'มกราคม 2026'
   },
   {
@@ -21,12 +21,11 @@ const portfolioProjects = [
     desc: 'ชุดภาพถ่ายภาพเพื่อโฆษณา',
     fullDesc: 'การจัดองค์ประกอบภาพถ่าย โดยใช้เทคนิค Color Grading เพื่อดึงมิติความลึกของแสงและเงาให้คมชัดสมจริง',
     tools: ['Photoshop', 'Canva'],
-    image: 'assets/images/photograp.jpg',
-    // ใส่รูปภาพหลายๆ รูปใน array นี้ (สามารถเพิ่มชื่อรูปภาพคั่นด้วยจุลภาคได้เรื่อยๆ)
+    image: 'photograp.jpg', // แก้ไขพาธรูปภาพให้ตรงกับ HTML
     images: [
-      'assets/images/photograp.jpg',
-      'assets/images/photo1.jpg',
-      'assets/images/photo2.jpg'
+      'photograp.jpg',
+      'photo1.jpg',
+      'photo2.jpg'
     ],
     date: 'ธันวาคม 2025'
   },
@@ -36,16 +35,16 @@ const portfolioProjects = [
     categoryName: 'Video Editing',
     title: 'Cinematic Video Editing',
     desc: 'การตัดต่อหนังสั้น พร้อมเทคนิค Sound Design',
-    fullDesc: 'ผลงานการตัดต่อที่เน้น SPX เพื่อให้ภาพเคลื่อนไหวกลมกลืนกับดนตรีอย่างสมบูรณ์แบบ เสริมด้วย Sound FX ที่สร้างมิติบรรยากาศ และการทำเกรดสีในมาตรฐาน DaVinci Wide Gamut เพื่อคุณภาพระดับภาพยนตร์',
+    fullDesc: 'ผลงานการตัดต่อที่เน้น SFX เพื่อให้ภาพเคลื่อนไหวกลมกลืนกับดนตรีอย่างสมบูรณ์แบบ เสริมด้วย Sound FX ที่สร้างมิติบรรยากาศ และการทำเกรดสีในมาตรฐาน DaVinci Wide Gamut เพื่อคุณภาพระดับภาพยนตร์',
     tools: ['Premiere Pro', 'DaVinci Resolve'],
-    image: 'assets/images/ve.png',
+    image: 've.png', // แก้ไขพาธรูปภาพให้ตรงกับ HTML
     date: 'พฤศจิกายน 2025'
-  },
-  
+  }
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
-  const filterBtns = document.querySelectorAll('.filter-btn');
+  // แก้ไข Selector ให้ดึง Class ได้ตรงทั้ง .portfolio-filter-btn และ .filter-btn
+  const filterBtns = document.querySelectorAll('.portfolio-filter-btn, .filter-btn');
   const projectCards = document.querySelectorAll('.portfolio-item-wrapper');
 
   filterBtns.forEach((btn) => {
