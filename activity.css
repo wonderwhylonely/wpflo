@@ -136,19 +136,21 @@
   align-items: stretch;
 }
 
-.activity-grid > :nth-child(3) {
+/* เลือกเฉพาะการ์ดใบสุดท้ายที่เป็นตัวเลขคี่ (เช่น ใบที่ 3, 5, 7) ให้กินพื้นที่ 2 คอลัมน์แล้วอยู่ตรงกลาง */
+.activity-grid > :last-child:nth-child(odd) {
   grid-column: 1 / -1;
   justify-self: center;
   width: calc(50% - 12px);
 }
 
+/* หน้าจอมือถือ (Responsive) */
 @media (max-width: 767px) {
   .activity-grid {
     grid-template-columns: 1fr;
     gap: 20px;
   }
 
-  .activity-grid > :nth-child(3) {
+  .activity-grid > :last-child:nth-child(odd) {
     grid-column: auto;
     width: 100%;
   }
