@@ -14,6 +14,95 @@
   <link rel="stylesheet" href="./hero.css">
   <link rel="stylesheet" href="./about.css">
   <link rel="stylesheet" href="./animations.css">
+
+  <style>
+  /* ล็อคไม่ให้รูปภาพขยายล้นจอ */
+  img {
+    max-width: 100%;
+    display: block;
+  }
+
+  /* ตัวการ์ดผลงาน */
+  .portfolio-card-personal {
+    background: #121212;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+  }
+
+  .portfolio-card-personal:hover {
+    transform: translateY(-6px);
+    border-color: #ff2a55;
+  }
+
+  /* กรอบคุมขนาดรูปภาพ (บังคับให้กรอบเท่ากันทุกใบ) */
+  .portfolio-thumb-wrap {
+    position: relative;
+    width: 100%;
+    height: 250px; /* กำหนดความสูงกรอบรูปภาพ */
+    overflow: hidden;
+    background: #000;
+  }
+
+  .portfolio-thumb-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ครอปรูปให้พอดีกรอบโดยสัดส่วนไม่เบี้ยว */
+    object-position: center;
+  }
+
+  /* ป้ายหมวดหมู่บนรูป */
+  .portfolio-badge-pill {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background: rgba(10, 10, 14, 0.85);
+    color: #ff2a55;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 42, 85, 0.35);
+    z-index: 2;
+  }
+
+  /* รายละเอียดการ์ด */
+  .portfolio-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .portfolio-title-text {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 8px;
+  }
+
+  .portfolio-desc-text {
+    font-size: 0.88rem;
+    color: #aaaaaa;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    flex-grow: 1;
+  }
+
+  .portfolio-btn-view {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    background: rgba(255, 42, 85, 0.1);
+    color: #ff2a55;
+    border: 1px solid rgba(255, 42, 85, 0.3);
+    cursor: pointer;
+  }
+</style>
 </head>
 <body>
 
